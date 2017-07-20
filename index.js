@@ -38,7 +38,7 @@ imgur.getAlbumInfo(env.IMGUR_ALBUM).then(()=>{
                     }).pipe(fs.createWriteStream(filePath)).on('close', () => {
 
                         imgurUploader(fs.readFileSync(filePath), {
-                                title:'Uploaded by @'+users.filter(user => user.id === file.user)[0].name+' on '+(new Date(file.created).toISOString()),
+                                title:'Uploaded by @'+users.filter(user => user.id === file.user)[0].name+' on '+(new Date(file.created*1000).toISOString()),
                                 album:env.IMGUR_ALBUM,
                                 token:env.IMGUR_TOKEN
                             }).then(json => {
