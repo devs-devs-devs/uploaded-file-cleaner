@@ -21,6 +21,8 @@
     "dotenv": "^4.0.0",
     "imgur": "^0.2.1",
     "imgur-uploader": "^4.2.1",
-    "slack": "^8.3.1"
+    "querystring": "^0.2.0",
+    "slack": "^8.3.1",
+    "slack-incoming-webhook": "^1.1.0"
   }
 }
