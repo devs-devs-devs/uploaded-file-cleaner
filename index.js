@@ -1,3 +1,4 @@
+process.chdir(__dirname);
 require('dotenv').config();
 require('./lib/funcs.js');
 process.chdir(__dirname);
